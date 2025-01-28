@@ -36,6 +36,9 @@
         <div class="w-full px-3 py-6 h-full overflow-y-auto bg-gray-50 dark:bg-gray-800">
             <ul class="space-y-2 font-medium">
                 <li>
+                    <span class="text-sm font-light pl-2 tracking-wide">Home</span>
+                </li>
+                <li>
                     <a href="#"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white bg-gray-100 dark:bg-gray-700 group">
                         <svg class="w-5 h-5 transition duration-75 dark:text-gray-400 text-gray-900 dark:text-white"
@@ -48,6 +51,35 @@
                         </svg>
                         <span class="ms-3">Dashboard</span>
                     </a>
+                </li>
+                <li>
+                    <span class="text-sm font-light pl-2 tracking-wide">Learn</span>
+                </li>
+                <li>
+                    <button type="button"
+                        class="border-white/50 border-solid border-l-[5px] flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-r-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                        <span class="flex-1 ms-3 text-left rtl:text-right  whitespace-nowrap">Verb Forms</span>
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                    <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                        <li>
+                            <a href="#"
+                                class="border-white/50 border-solid border-l flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-r-lg pl-8 ml-3 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Products</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Billing</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Invoice</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <button type="button"
