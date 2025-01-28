@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet" />
     <title>Document</title>
     <style>
         p {
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <!-- Isi -->
+    <!-- Sidebar Button -->
     <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar"
         aria-controls="sidebar-multi-level-sidebar" type="button"
         class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
@@ -29,6 +29,7 @@
         </svg>
     </button>
 
+    <!-- Sidebar -->
     <aside id="sidebar-multi-level-sidebar"
         class="bg-gray-50 dark:bg-gray-800 overflow-y-auto fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar">
@@ -87,7 +88,7 @@
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 18 18">
                             <path
-                                d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857  8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
+                                d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
                         </svg>
                         <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
                     </a>
@@ -108,7 +109,8 @@
                     <a href="#"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                         <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 18 16">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
                         </svg>
@@ -134,109 +136,176 @@
         </div>
     </aside>
 
-    <!-- Main -->
+    <!-- Main Content -->
     <div class="p-4 sm:ml-64">
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
             <div class="mb-8 sm:text-4xl text-2xl">
-                <h1 class="font-bold text-center">Get Started With Learn</h1>
+                <h1 class="font-bold text-center">
+                    Get Started With Learn
+                </h1>
                 <div class="mt-12 sm:text-xl text-base mx-4 sm:mx-24 font-normal text-center">
-                    <p>Raih kemudahan belajar bahasa Inggris, mulai dari kosakata dasar hingga percakapan harian yang
-                        lancar. Jadikan belajar bahasa Inggris menyenangkan, dari kata-kata dasar hingga keterampilan
-                        komunikasi sehari-hari. mulailah dengan subjek di bawah ini, dalam urutan berikut:</p>
+                    <p>
+                        Raih kemudahan belajar bahasa Inggris, mulai dari
+                        kosakata dasar hingga percakapan harian yang lancar.
+                        Jadikan belajar bahasa Inggris menyenangkan, dari
+                        kata-kata dasar hingga keterampilan komunikasi
+                        sehari-hari. mulailah dengan subjek di bawah ini,
+                        dalam urutan berikut:
+                    </p>
                 </div>
             </div>
             <div class="my-8 text-3xl">
                 <div class="flex flex-col sm:flex-row items-center bg-gray-800 p-4 rounded-lg border-none">
                     <div class="relative bg-yellow-200 p-8 rounded-lg w-full sm:w-2/6">
-                        <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps;">Vocabulary</h1>
+                        <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps">
+                            Vocabulary
+                        </h1>
                         <div
                             class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-yellow-200">
                         </div>
                     </div>
                     <div class="w-1 h-32 bg-white mx-4 hidden sm:block"></div>
                     <div class="bg-white p-8 rounded-lg w-full sm:w-[70%]">
-                        <h2 class="sm:text-xl text-lg font-bold mb-2">1. Let's Get Your First Vocabulary</h2>
-                        <p class="mb-4 sm:text-base text-sm">Materi belajar bahasa inggris untuk pemula yang harus dikuasai
-                            dasarnya adalah
-                            vocabulary . Materi ini, sering disebut juga sebagai kosakata yang dalam pembelajaran bahasa
-                            inggris sangat diperlukan.</p>
-                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">Let's Find Out</button>
+                        <h2 class="sm:text-xl text-lg font-bold mb-2">
+                            1. Let's Get Your First Vocabulary
+                        </h2>
+                        <p class="mb-4 sm:text-base text-sm">
+                            Materi belajar bahasa inggris untuk pemula yang
+                            harus dikuasai dasarnya adalah vocabulary.
+                            Materi ini, sering disebut juga sebagai kosakata
+                            yang dalam pembelajaran bahasa inggris sangat
+                            diperlukan.
+                        </p>
+                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
+                            Let's Find Out
+                        </button>
                     </div>
                 </div>
                 <div class="flex flex-col sm:flex-row items-center bg-gray-800 p-4 rounded-lg border-none">
                     <div class="relative bg-yellow-200 p-8 rounded-lg w-full sm:w-2/6">
-                        <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps;">Grammar</h1>
+                        <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps">
+                            Grammar
+                        </h1>
                         <div
                             class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-yellow-200">
                         </div>
                     </div>
                     <div class="w-1 h-32 bg-white mx-4 hidden sm:block"></div>
                     <div class="bg-white p-8 rounded-lg w-full sm:w-[70%]">
-                        <h2 class="sm:text-xl text-lg font-bold mb-2">1. Create your first web page</h2>
-                        <p class="mb-4 sm:text-base text-sm">Materi selanjutnya yang patut dikuasai dalam belajar bahasa inggris
-                            bagi pemula adalah grammar. Jika mendengar kata grammar, orang pasti akan membayangkan
-                            segala macam hal berbau kerumitan. Namun sebagai pemula grammar adalah hal yang penting
-                            untuk dikuasai.
+                        <h2 class="sm:text-xl text-lg font-bold mb-2">
+                            1. Create your first web page
+                        </h2>
+                        <p class="mb-4 sm:text-base text-sm">
+                            Materi selanjutnya yang patut dikuasai dalam
+                            belajar bahasa inggris bagi pemula adalah
+                            grammar. Jika mendengar kata grammar, orang
+                            pasti akan membayangkan segala macam hal berbau
+                            kerumitan. Namun sebagai pemula grammar adalah
+                            hal yang penting untuk dikuasai.
                         </p>
-                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">Let's Find Out</button>
+                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
+                            Let's Find Out
+                        </button>
                     </div>
                 </div>
                 <div class="flex flex-col sm:flex-row items-center bg-gray-800 p-4 rounded-lg">
                     <div class="relative bg-yellow-200 p-8 rounded-lg w-full sm:w-2/6">
-                        <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps;">Listening</h1>
+                        <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps">
+                            Listening
+                        </h1>
                         <div
                             class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-yellow-200">
                         </div>
                     </div>
                     <div class="w-1 h-32 bg-white mx-4 hidden sm:block"></div>
                     <div class="bg-white p-8 rounded-lg w-full sm:w-[70%]">
-                        <h2 class="sm:text-xl text-lg font-bold mb-2">1. Create your first web page</h2>
-                        <p class="mb-4 sm:text-base text-sm">Penerapannya adalah dengan mendengarkan beberapa kosakata dengan
-                            penyebutan yang benar dalam bahasa inggris. Meski tampak mudah, namun bahasa inggris ini
-                            termasuk sulit untuk dihafalkan karena jika ada salah penyebutan saja, bisa berbeda
-                            maknanya.
+                        <h2 class="sm:text-xl text-lg font-bold mb-2">
+                            1. Create your first web page
+                        </h2>
+                        <p class="mb-4 sm:text-base text-sm">
+                            Penerapannya adalah dengan mendengarkan beberapa
+                            kosakata dengan penyebutan yang benar dalam
+                            bahasa inggris. Meski tampak mudah, namun bahasa
+                            inggris ini termasuk sulit untuk dihafalkan
+                            karena jika ada salah penyebutan saja, bisa
+                            berbeda maknanya.
                         </p>
-                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">Let's Find Out</button>
+                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
+                            Let's Find Out
+                        </button>
                     </div>
                 </div>
                 <div class="flex flex-col sm:flex-row items-center bg-gray-800 p-4 rounded-lg">
                     <div class="relative bg-yellow-200 p-8 rounded-lg w-full sm:w-2/6">
-                        <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps;">Reading</h1>
+                        <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps">
+                            Reading
+                        </h1>
                         <div
                             class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-yellow-200">
                         </div>
                     </div>
                     <div class="w-1 h-32 bg-white mx-4 hidden sm:block"></div>
                     <div class="bg-white p-8 rounded-lg w-full sm:w-[70%]">
-                        <h2 class="sm:text-xl text-lg font-bold mb-2">1. Create your first web page</h2>
-                        <p class="mb-4 sm:text-base text-sm text-wrap">Cobalah berlatih untuk membaca beberapa teks sederhana dari
-                            buku berbahasa inggris. Melalui latihan terhadap materi ini seseorang bisa lebih peka dalam
-                            struktur kata bahasa inggris.
+                        <h2 class="sm:text-xl text-lg font-bold mb-2">
+                            1. Create your first web page
+                        </h2>
+                        <p class="mb-4 sm:text-base text-sm text-wrap">
+                            Cobalah berlatih untuk membaca beberapa teks
+                            sederhana dari buku berbahasa inggris. Melalui
+                            latihan terhadap materi ini seseorang bisa lebih
+                            peka dalam struktur kata bahasa inggris.
                         </p>
-                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">Let's Find Out</button>
+                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
+                            Let's Find Out
+                        </button>
                     </div>
                 </div>
                 <div class="flex flex-col sm:flex-row items-center bg-gray-800 p-4 rounded-lg">
                     <div class="relative bg-yellow-200 p-8 rounded-lg w-full sm:w-2/6">
-                        <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps;">Speaking</h1>
+                        <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps">
+                            Speaking
+                        </h1>
                         <div
                             class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-yellow-200">
                         </div>
                     </div>
                     <div class="w-1 h-32 bg-white mx-4 hidden sm:block"></div>
                     <div class="bg-white p-8 rounded-lg w-full sm:w-[70%]">
-                        <h2 class="sm:text-xl text-lg font-bold mb-2">1. Create your first web page</h2>
-                        <p class="mb-4 sm:text-base text-sm">Mulailah untuk berbicara dalam bahasa inggris dengan diri sendiri,
-                            sebelum melakukan pembicaraan dengan orang lain. Latih kemampuan ini secara pribadi lewat
-                            skenario sederhana dalam sebuah situasi agar kemampuan berbicara bisa terlatih.</p>
-                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">Let's Find Out</button>
+                        <h2 class="sm:text-xl text-lg font-bold mb-2">
+                            1. Create your first web page
+                        </h2>
+                        <p class="mb-4 sm:text-base text-sm">
+                            Mulailah untuk berbicara dalam bahasa inggris
+                            dengan diri sendiri, sebelum melakukan
+                            pembicaraan dengan orang lain. Latih kemampuan
+                            ini secara pribadi lewat skenario sederhana
+                            dalam sebuah situasi agar kemampuan berbicara
+                            bisa terlatih.
+                        </p>
+                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
+                            Let's Find Out
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="text-center">
-                <h1>What</h1>
+            <div class="text-center my-24">
+                <h1 class="text-7xl font-bold">What's Next?</h1>
+                <div class="text-xl mt-20 font-semibold max-w-lg mx-auto text-wrap">
+                    <p>
+                        Sekarang kamu sudah tau apa yang harus dikuasai
+                        dalam belajar bahasa inggris.
+                    </p>
+                    <p>
+                        <b>Langkah selanjutnya</b> adalah menerapkan di
+                        lingkungan mu agar dunia dapat berbicara padamu.
+                        Jangan ragu untuk memulai! Kamu bisa memulai dengan
+                        berbicara dengan diri sendiri.
+                    </p>
+                </div>
+                </p>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
