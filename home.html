@@ -31,17 +31,17 @@
 
     <!-- Sidebar -->
     <aside id="sidebar-multi-level-sidebar"
-        class="bg-sky-700 overflow-y-auto fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        class="bg-cyan-300 overflow-y-auto fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar">
         <div class="w-full px-3 py-6 h-full overflow-y-auto">
             <ul class="space-y-7 font-medium">
                 <ul class="space-y-2">
                     <li>
-                        <span class="text-base font-normal tracking-wide text-gray-100">Home</span>
+                        <span class="text-base font-normal tracking-wide text-gray-900">Home</span>
                     </li>
                     <li>
-                        <a href="#"
-                            class="pl-4 border-white border-solid border-l flex items-center p-2 text-white rounded-r-lg group">
+                        <a href="#dashboard"
+                            class="pl-4 border-gray-700 border-solid border-l flex items-center p-2 text-gray-700 rounded-r-lg group">
                             <svg class="w-5 h-5 transition duration-7" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
                                 <path
@@ -49,155 +49,81 @@
                                 <path
                                     d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
                             </svg>
-                            <span class="ms-3">Dashboard</span>
+                            <span class="ml-3">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html"
+                            class="pl-4 border-gray-700/50 border-solid border-l flex items-center p-2 text-gray-700/50 rounded-r-lg hover:text-gray-700 hover:border-gray-700">
+                            <svg class="flex-shrink-0 w-5 h-5 transition duration-75 " aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 16">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
+                            </svg>
+                            <span class="ml-3">Keluar</span>
                         </a>
                     </li>
                 </ul>
                 <ul class="">
                     <li class="mb-3">
-                        <span class="text-base font-normal tracking-wide text-gray-100">Basic</span>
+                        <span class="text-base font-normal tracking-wide text-gray-900">Basic</span>
                     </li>
                     <li>
                         <a href=""
-                            class="pl-4 border-white/50 border-solid border-l flex items-center p-2 text-white/50 rounded-r-lg hover:text-white hover:border-white">Vocabulary</a>
+                            class="pl-4 border-gray-700/50 border-solid border-l flex items-center p-2 text-gray-700/50 rounded-r-lg hover:text-gray-700 hover:border-gray-700">Vocabulary</a>
                     </li>
                     <li>
-                        <a href="" class="pl-4 border-white/50 border-solid border-l flex items-center p-2 text-white/50 rounded-r-lg hover:text-white hover:border-white">Grammar</a>
+                        <a href=""
+                            class="pl-4 border-gray-700/50 border-solid border-l flex items-center p-2 text-gray-700/50 rounded-r-lg hover:text-gray-700 hover:border-gray-700">Grammar</a>
                     </li>
                     <li>
-                        <a href="" class="pl-4 border-white/50 border-solid border-l flex items-center p-2 text-white/50 rounded-r-lg hover:text-white hover:border-white">Listening</a>
+                        <a href=""
+                            class="pl-4 border-gray-700/50 border-solid border-l flex items-center p-2 text-gray-700/50 rounded-r-lg hover:text-gray-700 hover:border-gray-700">Listening</a>
                     </li>
                     <li>
-                        <a href="" class="pl-4 border-white/50 border-solid border-l flex items-center p-2 text-white/50 rounded-r-lg hover:text-white hover:border-white">Reading</a>
+                        <a href=""
+                            class="pl-4 border-gray-700/50 border-solid border-l flex items-center p-2 text-gray-700/50 rounded-r-lg hover:text-gray-700 hover:border-gray-700">Reading</a>
                     </li>
                     <li>
-                        <a href="" class="pl-4 border-white/50 border-solid border-l flex items-center p-2 text-white/50 rounded-r-lg hover:text-white hover:border-white">Speaking</a>
+                        <a href=""
+                            class="pl-4 border-gray-700/50 border-solid border-l flex items-center p-2 text-gray-700/50 rounded-r-lg hover:text-gray-700 hover:border-gray-700">Speaking</a>
                     </li>
                 </ul>
-                <li>
-                    <span class="text-sm font-light pl-2 tracking-wide">Learn</span>
-                </li>
-                <li>
-                    <button type="button"
-                        class="border-white/50 border-solid border-l-[5px] flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-r-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
-                        <span class="flex-1 ms-3 text-left rtl:text-right  whitespace-nowrap">Verb Forms</span>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 1 4 4 4-4" />
-                        </svg>
-                    </button>
-                    <ul id="dropdown-example" class="hidden py-2 space-y-2">
-                        <li>
-                            <a href="#"
-                                class="border-white/50 border-solid border-l flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-r-lg pl-8 ml-3 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Products</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Billing</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Invoice</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <button type="button"
-                        class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
-                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 18 21">
-                            <path
-                                d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
-                        </svg>
-                        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">E-commerce</span>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 1 4 4 4-4" />
-                        </svg>
-                    </button>
-                    <ul id="dropdown-example" class="hidden py-2 space-y-2">
-                        <li>
-                            <a href="#"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Products</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Billing</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Invoice</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 18 18">
-                            <path
-                                d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
-                        </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <path
-                                d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z" />
-                        </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 18 16">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
-                        </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z" />
-                            <path
-                                d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z" />
-                            <path
-                                d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z" />
-                        </svg>
-                        <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
-                    </a>
-                </li>
+                <ul>
+                    <li class="mb-3">
+                        <span class="text-base font-normal tracking-wide text-gray-900">
+                            Verb Forms
+                        </span>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="pl-4 border-gray-700/50 border-solid border-l flex items-center p-2 text-gray-700/50 rounded-r-lg hover:text-gray-700 hover:border-gray-700">V1
+                            (Bentuk Dasar)</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="pl-4 border-gray-700/50 border-solid border-l flex items-center p-2 text-gray-700/50 rounded-r-lg hover:text-gray-700 hover:border-gray-700">V2
+                            (Waktu Lampau)</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="pl-4 border-gray-700/50 border-solid border-l flex items-center p-2 text-gray-700/50 rounded-r-lg hover:text-gray-700 hover:border-gray-700">V3
+                            (Partisipel Lampau)</a>
+                    </li>
+                </ul>
             </ul>
         </div>
     </aside>
 
     <!-- Main Content -->
-    <div class="p-4 sm:ml-64 bg-gradient-to-b from-sky-400 to-teal-400 bg-no-repeat">
-        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+    <div class="p-4 sm:ml-64 bg-stone-200">
+        <div class="p-4 border-2 border-stone-800 text-stone-800 border-dashed rounded-lg">
             <div class="mb-8 sm:text-4xl text-2xl">
-                <h1 class="font-bold text-center text-gray-800">
+                <h1 id="dashboard" class="font-bold text-center">
                     Get Started With Learn
                 </h1>
-                <div class="mt-12 sm:text-xl text-base text-gray-800 max-w-2xl mx-auto font-normal text-center">
+                <div class="mt-12 sm:text-xl text-base max-w-2xl mx-auto font-normal text-center">
                     <p>
                         Raih kemudahan belajar bahasa Inggris, mulai dari
                         kosakata dasar hingga percakapan harian yang lancar.
@@ -209,16 +135,16 @@
                 </div>
             </div>
             <div class="my-8 text-3xl">
-                <div class="flex flex-col sm:flex-row items-center bg-indigo-500 p-4 rounded-t-lg border-none">
-                    <div class="relative bg-rose-300 p-8 rounded-lg w-full sm:w-2/6">
+                <div class="flex flex-col sm:flex-row items-center bg-rose-400 p-4 rounded-t-lg border-none">
+                    <div class="relative bg-amber-500 p-8 rounded-lg w-full sm:w-2/6">
                         <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps">
                             Vocabulary
                         </h1>
                         <div
-                            class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-rose-300">
+                            class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-amber-500">
                         </div>
                     </div>
-                    <div class="w-1 h-32 bg-indigo-900 mx-4 hidden sm:block"></div>
+                    <div class="w-1 h-32 bg-amber-500 mx-4 hidden sm:block"></div>
                     <div class="bg-amber-200 p-8 rounded-lg w-full sm:w-[70%]">
                         <h2 class="sm:text-xl text-lg font-bold mb-2">
                             1. Mari Dapatkan Kosakata Pertama Anda
@@ -230,21 +156,21 @@
                             yang dalam pembelajaran bahasa inggris sangat
                             diperlukan.
                         </p>
-                        <button class="bg-emerald-600 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
+                        <button class="bg-teal-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
                             Let's Find Out
                         </button>
                     </div>
                 </div>
-                <div class="flex flex-col sm:flex-row items-center bg-indigo-500 p-4 border-none">
-                    <div class="relative bg-rose-300 p-8 rounded-lg w-full sm:w-2/6">
+                <div class="flex flex-col sm:flex-row items-center bg-rose-400 p-4 border-none">
+                    <div class="relative bg-amber-500 p-8 rounded-lg w-full sm:w-2/6">
                         <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps">
                             Grammar
                         </h1>
                         <div
-                            class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-rose-300">
+                            class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-amber-500">
                         </div>
                     </div>
-                    <div class="w-1 h-32 bg-indigo-900 mx-4 hidden sm:block"></div>
+                    <div class="w-1 h-32 bg-amber-500 mx-4 hidden sm:block"></div>
                     <div class="bg-amber-200 p-8 rounded-lg w-full sm:w-[70%]">
                         <h2 class="sm:text-xl text-lg font-bold mb-2">
                             2. Mari Kuasai Tata Bahasa dengan Mudah
@@ -257,21 +183,21 @@
                             kerumitan. Namun sebagai pemula grammar adalah
                             hal yang penting untuk dikuasai.
                         </p>
-                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
+                        <button class="bg-teal-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
                             Let's Find Out
                         </button>
                     </div>
                 </div>
-                <div class="flex flex-col sm:flex-row items-center bg-indigo-500 p-4">
-                    <div class="relative bg-rose-300 p-8 rounded-lg w-full sm:w-2/6">
+                <div class="flex flex-col sm:flex-row items-center bg-rose-400 p-4">
+                    <div class="relative bg-amber-500 p-8 rounded-lg w-full sm:w-2/6">
                         <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps">
                             Listening
                         </h1>
                         <div
-                            class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-rose-300">
+                            class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-amber-500">
                         </div>
                     </div>
-                    <div class="w-1 h-32 bg-indigo-900 mx-4 hidden sm:block"></div>
+                    <div class="w-1 h-32 bg-amber-500 mx-4 hidden sm:block"></div>
                     <div class="bg-amber-200 p-8 rounded-lg w-full sm:w-[70%]">
                         <h2 class="sm:text-xl text-lg font-bold mb-2">
                             3. Mari Asah Kemampuan Mendengar Anda
@@ -284,21 +210,21 @@
                             karena jika ada salah penyebutan saja, bisa
                             berbeda maknanya.
                         </p>
-                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
+                        <button class="bg-teal-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
                             Let's Find Out
                         </button>
                     </div>
                 </div>
-                <div class="flex flex-col sm:flex-row items-center bg-indigo-500 p-4 ">
-                    <div class="relative bg-rose-300 p-8 rounded-lg w-full sm:w-2/6">
+                <div class="flex flex-col sm:flex-row items-center bg-rose-400 p-4 ">
+                    <div class="relative bg-amber-500 p-8 rounded-lg w-full sm:w-2/6">
                         <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps">
                             Reading
                         </h1>
                         <div
-                            class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-rose-300">
+                            class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-amber-500">
                         </div>
                     </div>
-                    <div class="w-1 h-32 bg-indigo-900 mx-4 hidden sm:block"></div>
+                    <div class="w-1 h-32 bg-amber-500 mx-4 hidden sm:block"></div>
                     <div class="bg-amber-200 p-8 rounded-lg w-full sm:w-[70%]">
                         <h2 class="sm:text-xl text-lg font-bold mb-2">
                             4. Mari Tingkatkan Pemahaman Membaca Anda
@@ -309,21 +235,21 @@
                             latihan terhadap materi ini seseorang bisa lebih
                             peka dalam struktur kata bahasa inggris.
                         </p>
-                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
+                        <button class="bg-teal-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
                             Let's Find Out
                         </button>
                     </div>
                 </div>
-                <div class="flex flex-col sm:flex-row items-center bg-indigo-500 p-4 rounded-b-lg">
-                    <div class="relative bg-rose-300 p-8 rounded-lg w-full sm:w-2/6">
+                <div class="flex flex-col sm:flex-row items-center bg-rose-400 p-4 rounded-b-lg">
+                    <div class="relative bg-amber-500 p-8 rounded-lg w-full sm:w-2/6">
                         <h1 class="sm:text-4xl text-2xl font-bold text-black" style="font-variant: small-caps">
                             Speaking
                         </h1>
                         <div
-                            class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-rose-300">
+                            class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-amber-500">
                         </div>
                     </div>
-                    <div class="w-1 h-32 bg-indigo-900 mx-4 hidden sm:block"></div>
+                    <div class="w-1 h-32 bg-amber-500 mx-4 hidden sm:block"></div>
                     <div class="bg-amber-200 p-8 rounded-lg w-full sm:w-[70%]">
                         <h2 class="sm:text-xl text-lg font-bold mb-2">
                             5. Mari Percaya Diri Berbicara dalam Bahasa Baru
@@ -336,7 +262,7 @@
                             dalam sebuah situasi agar kemampuan berbicara
                             bisa terlatih.
                         </p>
-                        <button class="bg-green-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
+                        <button class="bg-teal-500 mt-4 text-sm sm:text-base text-white px-4 py-2 rounded-full">
                             Let's Find Out
                         </button>
                     </div>
