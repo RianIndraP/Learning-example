@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pembelajaran Vocabulary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 text-gray-100 min-h-screen flex items-center justify-center">
+    <div class="max-w-4xl mx-auto p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-5xl font-extrabold text-white drop-shadow-lg">Vocabulary</h1>
+            <p class="text-lg mt-2 text-gray-200">Tingkatkan kemampuan bahasa Inggrismu dengan memahami kosakata!</p>
+        </header>
+
+        <div class="bg-white p-6 rounded-xl shadow-xl text-gray-900">
+            <h2 class="text-3xl font-bold text-blue-600">Pengertian Vocabulary</h2>
+            <p class="mt-2 text-lg">Vocabulary adalah kumpulan kata-kata yang digunakan dalam sebuah bahasa. Penguasaan vocabulary penting untuk memahami dan menyampaikan informasi, baik secara lisan maupun tulisan. Semakin banyak vocabulary yang dikuasai, semakin mudah untuk memahami teks, percakapan, dan mengekspresikan ide dengan baik.</p>
+        </div>
+
+        <div class="bg-white p-8 mt-8 rounded-xl shadow-xl text-gray-900">
+            <h2 class="text-3xl font-bold text-blue-600 text-center">Tes Vocabulary</h2>
+            <p class="text-gray-600 text-center mb-6">Jawablah pertanyaan berikut dengan memilih jawaban yang benar!</p>
+            
+            <form id="quizForm" class="space-y-6">
+                <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+                    <p class="font-semibold text-lg">1. Pilih kata yang termasuk dalam kategori adjective:</p>
+                    <label class="block mt-2 bg-white p-2 rounded-md shadow-md cursor-pointer hover:bg-blue-100 transition">
+                        <input type="radio" name="question1" value="a" class="mr-2"> a. happy
+                    </label>
+                    <label class="block mt-2 bg-white p-2 rounded-md shadow-md cursor-pointer hover:bg-blue-100 transition">
+                        <input type="radio" name="question1" value="b" class="mr-2"> b. sing
+                    </label>
+                    <label class="block mt-2 bg-white p-2 rounded-md shadow-md cursor-pointer hover:bg-blue-100 transition">
+                        <input type="radio" name="question1" value="c" class="mr-2"> c. table
+                    </label>
+                    <label class="block mt-2 bg-white p-2 rounded-md shadow-md cursor-pointer hover:bg-blue-100 transition">
+                        <input type="radio" name="question1" value="d" class="mr-2"> d. walk
+                    </label>
+                </div>
+                
+                <button type="submit" class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition duration-300">Kirim Jawaban</button>
+            </form>
+            
+            <p id="resultMessage" class="mt-6 text-center text-lg font-bold"></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("quizForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let selectedAnswer = document.querySelector('input[name="question1"]:checked');
+            let resultMessage = document.getElementById("resultMessage");
+            if (selectedAnswer) {
+                if (selectedAnswer.value === "a") {
+                    resultMessage.textContent = "✅ Jawaban benar!";
+                    resultMessage.classList.add("text-green-600");
+                } else {
+                    resultMessage.textContent = "❌ Jawaban salah, coba lagi.";
+                    resultMessage.classList.add("text-red-600");
+                }
+            } else {
+                resultMessage.textContent = "⚠️ Pilih jawaban terlebih dahulu!";
+                resultMessage.classList.add("text-yellow-600");
+            }
+            setTimeout(() => {
+                document.getElementById("quizForm").reset();
+                resultMessage.textContent = "";
+                resultMessage.classList.remove("text-green-600", "text-red-600", "text-yellow-600");
+            }, 4000);
+        });
+    </script>
 </body>
 </html>
