@@ -2,422 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Document</title>
-    <style>
-        /* p {
-            margin-bottom: 1em !important;
-        } */
+
+    <style type="text/css">
+        .text-9xl {
+            font-size: 14rem;
+        }
+
+        @media(max-width: 645px) {
+            .text-9xl {
+                font-size: 5.75rem;
+            }
+
+            .text-6xl {
+                font-size: 1.75rem;
+            }
+
+            .text-2xl {
+                font-size: 1rem;
+                line-height: 1.2rem;
+            }
+
+            .py-8 {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            .px-6 {
+                padding-left: 1.2rem;
+                padding-right: 1.2rem;
+            }
+
+            .mr-6 {
+                margin-right: 0.5rem;
+            }
+
+            .px-12 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
     </style>
+
 </head>
 
-<body class="">
-    <!-- Sidebar Button -->
-    <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar"
-        aria-controls="sidebar-multi-level-sidebar" type="button"
-        class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-        <span class="sr-only">Open sidebar</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path clip-rule="evenodd" fill-rule="evenodd"
-                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
-            </path>
-        </svg>
-    </button>
+<body>
 
-    <!-- Sidebar -->
-    <aside id="sidebar-multi-level-sidebar"
-        class="bg-rose-400 overflow-y-auto fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
-        aria-label="Sidebar">
-        <div class="w-full px-3 py-6 h-full overflow-y-auto">
-            <ul class="space-y-7 font-medium">
-                <ul class="space-y-2">
-                    <li>
-                        <span class="text-base font-normal tracking-wide text-gray-900">Home</span>
-                    </li>
-                    <li>
-                        <a href="home.html"
-                            class="pl-4 border-gray-700 border-solid border-l flex items-center p-2 text-gray-700 rounded-r-lg group hover:text-black hover:border-black">
-                            <svg class="w-5 h-5 transition duration-7" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                                <path
-                                    d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                                <path
-                                    d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-                            </svg>
-                            <span class="ml-3">Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html"
-                            class="pl-4 border-gray-700 border-solid border-l flex items-center p-2 text-gray-700 rounded-r-lg hover:text-black hover:border-black">
-                            <svg class="flex-shrink-0 w-5 h-5 transition duration-75 " aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 16">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
-                            </svg>
-                            <span class="ml-3">Keluar</span>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="">
-                    <li class="mb-3">
-                        <span class="text-base font-normal tracking-wide text-gray-900">Basic</span>
-                    </li>
-                    <li>
-                        <a href="vocabulary.html"
-                            class="pl-4 border-solid border-l flex items-center p-2 rounded-r-lg text-black border-black">Vocabulary</a>
-                    </li>
-                    <li>
-                        <a href="grammar.html"
-                            class="pl-4 border-gray-700 border-solid border-l flex items-center p-2 text-gray-700 rounded-r-lg hover:text-black hover:border-black">Grammar</a>
-                    </li>
-                    <li>
-                        <a href="listening.html"
-                            class="pl-4 border-gray-700 border-solid border-l flex items-center p-2 text-gray-700 rounded-r-lg hover:text-black hover:border-black">Listening</a>
-                    </li>
-                    <li>
-                        <a href="reading.html"
-                            class="pl-4 border-gray-700 border-solid border-l flex items-center p-2 text-gray-700 rounded-r-lg hover:text-black hover:border-black">Reading</a>
-                    </li>
-                    <li>
-                        <a href="speaking.html"
-                            class="pl-4 border-gray-700 border-solid border-l flex items-center p-2 text-gray-700 rounded-r-lg hover:text-black hover:border-black">Speaking</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="mb-3">
-                        <span class="text-base font-normal tracking-wide text-gray-900">
-                            Verb Forms
-                        </span>
-                    </li>
-                    <li>
-                        <a href="V1.html"
-                            class="pl-4 border-gray-700 border-solid border-l flex items-center p-2 text-gray-700 rounded-r-lg hover:text-black hover:border-black">V1
-                            (Bentuk Dasar)</a>
-                    </li>
-                    <li>
-                        <a href="V2.html"
-                            class="pl-4 border-gray-700 border-solid border-l flex items-center p-2 text-gray-700 rounded-r-lg hover:text-black hover:border-black">V2
-                            (Waktu Lampau)</a>
-                    </li>
-                    <li>
-                        <a href="v3.html"
-                            class="pl-4 border-gray-700 border-solid border-l flex items-center p-2 text-gray-700 rounded-r-lg hover:text-black hover:border-black">V3
-                            (Partisipel Lampau)</a>
-                    </li>
-                </ul>
-            </ul>
-        </div>
-    </aside>
-
-    <!-- Main Content -->
-    <div class="p-4 sm:ml-64 bg-stone-200 text-pretty">
-        <div class="p-4 border-2 border-stone-800 text-stone-800 border-dashed rounded-lg">
-            <div class="text-xs sm:text-xl font-medium">
-                <h1 class="mb-8 font-bold text-center text-4xl sm:text-7xl text-black">Vocabulary</h1>
-                <div class="max-w-5xl mx-auto">
-                    <p class="sm:mb-5 mb-3">Vocabulary adalah kumpulan kata-kata yang digunakan dalam sebuah bahasa.
-                        Penguasaan vocabulary
-                        penting untuk memahami dan menyampaikan informasi, baik secara lisan maupun tulisan. Kosakata
-                        adalah
-                        fondasi dari sebuah bahasa karena tanpa penguasaan kosakata, seseorang tidak akan mampu memahami
-                        atau menyampaikan informasi dengan baik. Semakin banyak vocabulary yang dikuasai, semakin mudah
-                        untuk memahami teks, percakapan, dan mengekspresikan ide dengan baik. </p>
-                    <p class="sm:mb-5 mb-3"> Vocabulary terbagi menjadi beberapa jenis, seperti kata benda (noun), kata
-                        kerja (verb), kata
-                        sifat
-                        (adjective), kata keterangan (adverb), dan lainnya. </p>
-                    <div class="w-full bg-stone-300 overflow-x-auto whitespace-nowrap mt-5 mb-7">
-                        <table class="grid w-full grid-cols-[auto_auto] border-b border-gray-900/30">
-                            <thead class="">
-                                <tr>
-                                    <th class="px-4 py-2.5 text-left font-semibold">Kosakata dapat dibagi menjadi
-                                        beberapa kategori:</th>
-                                </tr>
-                            </thead>
-                            <tbody class="sm:text-lg text-xs col-span-2 grid border-t border-gray-900/30"
-                                style="grid-template-columns: subgrid;">
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">1. Active Vocabulary:</td>
-                                    <td class="px-4 py-2 align-top">Kosakata yang digunakan secara aktif dalam berbicara
-                                        dan menulis.</td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">2. Passive Vocabulary:</td>
-                                    <td class="px-4 py-2 align-top">Kosakata yang dipahami saat mendengar atau membaca
-                                        tetapi jarang digunakan dalam komunikasi.</td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">3. Core Vocabulary:</td>
-                                    <td class="px-4 py-2 align-top">Kata-kata yang dianggap penting atau sering
-                                        digunakan, seperti "eat", "go", "good", dan sebagainya.</td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">4. Specialized Vocabulary:</td>
-                                    <td class="px-4 py-2 align-top">Kosakata yang digunakan dalam bidang tertentu,
-                                        seperti istilah medis, teknologi, atau hukum.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <p class="sm:mb-5 mb-3">Dalam perspektif pembelajaran, memahami kosakata tidak hanya berarti
-                        menghafal arti kata, tetapi
-                        juga memahami cara penggunaannya dalam berbagai konteks. Misalnya, kata run memiliki berbagai
-                        makna tergantung pada konteksnya:</p>
-                    <p>"I run every morning." (berlari)</p>
-                    <p class="sm:mb-5 mb-3">"She runs a small business." (mengelola)</p>
-                    <p class="sm:mb-5 mb-3">Kosakata juga dapat mencerminkan budaya dan sejarah suatu bangsa. Sebagai
-                        contoh, idiom-idiom
-                        dalam Bahasa Inggris seperti a piece of cake (sesuatu yang mudah) atau break the ice (memulai
-                        percakapan) mencerminkan nilai dan tradisi masyarakat penuturnya.</p>
-                    <p>Manfaat Memperbanyak Vocabulary:</p>
-                    <div class="sm:mb-5 mb-3 text-lg">
-                        <p>1. Meningkatkan kemampuan komunikasi lisan dan tulisan. </p>
-                        <p>2. Mempermudah pemahaman saat membaca teks bahasa Inggris.</p>
-                        <p>3. Membantu dalam mendengarkan percakapan atau pidato bahasa Inggris.</p>
-                        <p>4. Memperkaya kemampuan berpikir kritis dan analitis.</p>
-                        </p>
-                    </div>
-                    <p class="sm:mb-5 mb-3">Jenis Kosakata Berdasarkan Fungsi Kata (Parts of Speech):</p>
-                    <div class="w-full bg-stone-300 overflow-x-auto whitespace-nowrap mt-5 mb-7">
-                        <table class="grid w-full grid-cols-[auto_auto] border-b border-gray-900/30">
-                            <thead class="col-span-2 grid" style="grid-template-columns: subgrid;">
-                                <tr class="col-span-2 grid" style="grid-template-columns: subgrid;">
-                                    <th class="px-4 py-2.5 text-left font-semibold">Jenis</th>
-                                    <th class="px-4 py-2.5 text-left font-semibold">Fungsi</th>
-                                </tr>
-                            </thead>
-                            <tbody class="sm:text-lg text-xs col-span-2 grid border-t border-gray-900/30"
-                                style="grid-template-columns: subgrid;">
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">1. Noun (kata benda):</td>
-                                    <td class="px-4 py-2 align-top">Menyatakan nama benda, tempat, orang, atau konsep.
-                                        <br> Contoh: chair, city, teacher, happiness.
-                                    </td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">2. Verb (kata kerja):</td>
-                                    <td class="px-4 py-2 align-top">Menunjukkan tindakan, keadaan, atau kejadian.
-                                        <br> Contoh: run, jump, think, become.
-                                    </td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">3. Adjective (kata sifat):</td>
-                                    <td class="px-4 py-2 align-top">Menggambarkan sifat atau keadaan dari noun.
-                                        <br> Contoh: beautiful, tall, difficult.
-                                    </td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">4. Adverb (kata keterangan): </td>
-                                    <td class="px-4 py-2 align-top">Memberikan informasi tambahan tentang kata kerja,
-                                        kata sifat, atau adverb lain.
-                                        <br> Contoh: slowly, very, yesterday.
-                                    </td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">5. Preposition (kata hubung): </td>
-                                    <td class="px-4 py-2 align-top">Menghubungkan kata benda atau kata ganti dengan kata
-                                        lainnya dalam kalimat.
-                                        <br> Contoh: in, on, at, under.
-                                    </td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">6. Pronoun (kata ganti): </td>
-                                    <td class="px-4 py-2 align-top">Menggantikan kata benda.
-                                        <br> Contoh: he, she, it, they.
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="w-full bg-stone-300 overflow-x-auto whitespace-nowrap mt-5 mb-7">
-                        <table class="grid w-full grid-cols-[auto_auto] border-b border-gray-900/30">
-                            <thead class="">
-                                <tr>
-                                    <th class="px-4 py-2.5 text-left font-semibold">Contoh Vocabulary dalam Kalimat dan
-                                        artinya</th>
-                                </tr>
-                            </thead>
-                            <tbody class="sm:text-lg text-xs col-span-2 grid border-t border-gray-900/30"
-                                style="grid-template-columns: subgrid;">
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">1. Noun:</td>
-                                    <td class="px-4 py-2 align-top">"The children are playing in the garden."
-                                        <br> "Anak-anak sedang bermain di taman."
-                                    </td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">2. Verb:</td>
-                                    <td class="px-4 py-2 align-top">"She studies English every evening."
-                                        <br> "Dia belajar bahasa Inggris setiap malam."
-                                    </td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">3. Adjective:</td>
-                                    <td class="px-4 py-2 align-top">"The movie was very interesting."
-                                        <br> "Film itu sangat menarik."
-                                    </td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">4. Adverb:</td>
-                                    <td class="px-4 py-2 align-top">"He runs quickly to catch the bus."
-                                        <br> "Dia berlari cepat untuk mengejar bus."
-                                    </td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">5. Preposition</td>
-                                    <td class="px-4 py-2 align-top">"We will meet at the park."
-                                        <br> "Kita akan bertemu di taman."
-                                    </td>
-                                </tr>
-                                <tr class="col-span-2 grid border-b border-gray-900/30"
-                                    style="grid-template-columns: subgrid;">
-                                    <td class="px-4 py-2 align-top">6. Pronoun</td>
-                                    <td class="px-4 py-2 align-top"> "She is my best friend."
-                                        <br> "Dia adalah sahabatku."
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="text-center mt-20">
-                        <h2 class="sm:mb-3 mb-1">Contoh Soal</h2>
-                        <p class="sm:mb-5 mb-3">Jawablah pertanyaan berikut dengan memilih jawaban yang benar!</p>
-                        <div class="bg-stone-300 p-4 rounded-3xl my-8">
-                            <form id="quizForm_1" class="space-y-6">
-                                <div class="">
-                                    <p class="font-semibold text-lg pb-2">1. Pilih kata yang termasuk dalam kategori
-                                        adjective:
-                                    </p>
-                                    <label
-                                        class="block mt-2 text-left bg-amber-300 p-2 rounded-md shadow-md cursor-pointer hover:bg-amber-400 transition">
-                                        <input type="radio" name="question_1" value="a" class="mr-2"> a. happy
-                                    </label>
-                                    <label
-                                        class="block mt-2 text-left bg-amber-300 p-2 rounded-md shadow-md cursor-pointer hover:bg-amber-400 transition">
-                                        <input type="radio" name="question_1" value="b" class="mr-2"> b. sing
-                                    </label>
-                                    <label
-                                        class="block mt-2 text-left bg-amber-300 p-2 rounded-md shadow-md cursor-pointer hover:bg-amber-400 transition">
-                                        <input type="radio" name="question_1" value="c" class="mr-2"> c. table
-                                    </label>
-                                    <label
-                                        class="block mt-2 text-left bg-amber-300 p-2 rounded-md shadow-md cursor-pointer hover:bg-amber-400 transition">
-                                        <input type="radio" name="question_1" value="d" class="mr-2"> d. walk
-                                    </label>
-                                </div>
-                                <button type="submit"
-                                    class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition duration-300">Kirim
-                                    Jawaban</button>
-                            </form>
-                            <p id="resultMessage_1" class="mt-6 text-center text-lg font-bold"></p>
-                        </div>
-                        <div class="bg-stone-300 p-4 rounded-3xl my-8">
-                            <form id="quizForm_2" class="space-y-6">
-                                <div class="">
-                                    <p class="font-semibold text-lg pb-2">2. Pilih kalimat yang mengandung adjective
-                                    </p>
-                                    <label
-                                        class="block mt-2 text-left bg-amber-300 p-2 rounded-md shadow-md cursor-pointer hover:bg-amber-400 transition">
-                                        <input type="radio" name="question_2" value="a" class="mr-2"> a. The sky is
-                                        blue.
-                                    </label>
-                                    <label
-                                        class="block mt-2 text-left bg-amber-300 p-2 rounded-md shadow-md cursor-pointer hover:bg-amber-400 transition">
-                                        <input type="radio" name="question_2" value="b" class="mr-2"> b. She runs fast.
-                                    </label>
-                                    <label
-                                        class="block mt-2 text-left bg-amber-300 p-2 rounded-md shadow-md cursor-pointer hover:bg-amber-400 transition">
-                                        <input type="radio" name="question_2" value="c" class="mr-2"> c. They are
-                                        playing soccer.
-                                    </label>
-                                    <label
-                                        class="block mt-2 text-left bg-amber-300 p-2 rounded-md shadow-md cursor-pointer hover:bg-amber-400 transition">
-                                        <input type="radio" name="question_2" value="d" class="mr-2"> d. He reads every
-                                        night.
-                                    </label>
-                                </div>
-                                <button type="submit"
-                                    class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition duration-300">Kirim
-                                    Jawaban</button>
-                            </form>
-                            <p id="resultMessage_2" class="mt-6 text-center text-lg font-bold"></p>
-                        </div>
-                    </div>
+    <div class="bg-gradient-to-r from-purple-300 to-blue-200">
+        <div class="w-9/12 m-auto py-16 min-h-screen flex items-center justify-center">
+            <div class="bg-white shadow overflow-hidden sm:rounded-lg pb-8">
+                <div class="border-t border-gray-200 text-center pt-8">
+                    <h1 class="text-9xl font-bold text-purple-400">404</h1>
+                    <h1 class="text-6xl font-medium py-8">oops! Page not found</h1>
+                    <p class="text-2xl pb-8 px-12 font-medium">Oops! The page you are looking for does not exist. It
+                        might have been moved or deleted.</p>
+                    <button onclick="redirectHome()"
+                        class="bg-gradient-to-r from-purple-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 text-white font-semibold px-6 py-3 rounded-md mr-6">
+                        HOME
+                    </button>
+                    <button onclick="redirectContact()"
+                        class="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-500 text-white font-semibold px-6 py-3 rounded-md">
+                        Dashboard
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script>
-        document.getElementById("quizForm_1").addEventListener("submit", function (event) {
-            event.preventDefault();
-            let selectedAnswer = document.querySelector('input[name="question_1"]:checked');
-            let resultMessage = document.getElementById("resultMessage_1");
-            if (selectedAnswer) {
-                if (selectedAnswer.value === "a") {
-                    resultMessage.textContent = "✅ Jawaban benar!";
-                    resultMessage.classList.add("text-green-600");
-                } else {
-                    resultMessage.textContent = "❌ Jawaban salah, coba lagi.";
-                    resultMessage.classList.add("text-red-600");
-                }
-            } else {
-                resultMessage.textContent = "⚠️ Pilih jawaban terlebih dahulu!";
-                resultMessage.classList.add("text-yellow-600");
-            }
-            setTimeout(() => {
-                document.getElementById("quizForm_1").reset();
-                resultMessage.textContent = "";
-                resultMessage.classList.remove("text-green-600", "text-red-600", "text-yellow-600");
-            }, 4000);
-        });
+        function redirectHome() {
+            window.location.href = "index.html";
+        }
 
-        document.getElementById("quizForm_2").addEventListener("submit", function (event) {
-            event.preventDefault();
-            let selectedAnswer = document.querySelector('input[name="question_2"]:checked');
-            let resultMessage = document.getElementById("resultMessage_2");
-            if (selectedAnswer) {
-                if (selectedAnswer.value === "a") {
-                    resultMessage.textContent = "✅ Jawaban benar!";
-                    resultMessage.classList.add("text-green-600");
-                } else {
-                    resultMessage.textContent = "❌ Jawaban salah, coba lagi.";
-                    resultMessage.classList.add("text-red-600");
-                }
-            } else {
-                resultMessage.textContent = "⚠️ Pilih jawaban terlebih dahulu!";
-                resultMessage.classList.add("text-yellow-600");
-            }
-            setTimeout(() => {
-                document.getElementById("quizForm_2").reset();
-                resultMessage.textContent = "";
-                resultMessage.classList.remove("text-green-600", "text-red-600", "text-yellow-600");
-            }, 4000);
-        });
+        function redirectContact() {
+            window.location.href = "home.html";
+        }
     </script>
+
+
 </body>
 
 </html>
